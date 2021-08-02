@@ -5,6 +5,10 @@
     --text-hover: #ffdac1;
 }
 
+.header-box{
+    background-color: var(--background-primary);
+}
+
 .header-title{
     background-color: var(--background-primary);
     color: var(--primary-text);
@@ -12,4 +16,18 @@
 
 .wolf-logo{
     background-color: var(--background-primary);
+    width: 144px;
+}
+
+@media screen and (max-width: 375px) {
+
+    .header-title{
+        font-size: 20px;
+        font-weight: bolder;
+    }
+
+    .wolf-logo{
+        width: 128px;
+    }
+
 }
