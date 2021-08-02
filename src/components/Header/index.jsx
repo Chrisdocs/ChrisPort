@@ -1,9 +1,13 @@
 import React from 'react';
+import '../../assets/css/header.css';
 
 function Header(props) {
 
     return (
-        <div>Chris Wolfe Web Development</div>
+        <div>
+            <img className="wolf-logo" src={require('../../assets/img/wolf-logo.png').default} />
+            <h1 className='header-title'>{`{Wolfe}`} Web.Development</h1>
+        </div>
     )
 
 };

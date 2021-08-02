@@ -1,0 +1,15 @@
+/* src/assets/css/header.css */
+:root {
+    --background-primary: #f8f8ff;
+    --primary-text: #7e8aa1;
+    --text-hover: #ffdac1;
+}
+
+.header-title{
+    background-color: var(--background-primary);
+    color: var(--primary-text);
+}
+
+.wolf-logo{
+    background-color: var(--background-primary);
+}
