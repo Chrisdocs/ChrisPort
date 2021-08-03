@@ -1,0 +1,18 @@
+/* src/assets/css/nav.css */
+
+:root {
+    --background-primary: #f8f8ff;
+    --primary-text: #7e8aa1;
+    --text-hover: #ffdac1;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--primary-text);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.nav-link:hover {
+    color: var(--text-hover);
+}
