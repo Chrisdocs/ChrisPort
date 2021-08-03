@@ -25,20 +25,7 @@
     width: 144px;
 }
 
-@media screen and (max-width: 375px) {
-
-    .header-title-link{
-        font-size: 20px;
-        font-weight: bolder;
-    }
-
-    .wolf-logo{
-        width: 128px;
-    }
-
-}
-
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 550px) {
 
     .header-title-link{
         font-size: 18px;
