@@ -9,9 +9,15 @@
     background-color: var(--background-primary);
 }
 
-.header-title{
+.header-title-link{
     background-color: var(--background-primary);
     color: var(--primary-text);
+    text-decoration: none;
+    font-size: 42px;
+}
+
+.header-title-link:hover {
+    color: var(--text-hover);
 }
 
 .wolf-logo{
@@ -21,13 +27,26 @@
 
 @media screen and (max-width: 375px) {
 
-    .header-title{
+    .header-title-link{
         font-size: 20px;
         font-weight: bolder;
     }
 
     .wolf-logo{
         width: 128px;
+    }
+
+}
+
+@media screen and (max-width: 300px) {
+
+    .header-title-link{
+        font-size: 18px;
+        font-weight: bolder;
+    }
+
+    .wolf-logo{
+        width: 86px;
     }
 
 }
