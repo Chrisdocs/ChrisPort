@@ -48,25 +48,27 @@ function Project(props) {
             <div className="container">
             <div className="flex flex-col">
                 <h1 className="project-page-title">
-                Welcome to my Projects!
+                    Welcome to my Projects!
                 </h1>
                 <p className="project-page-desc">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo
-                facilis repellat ab cupiditate alias vero aliquid obcaecati quisquam
-                fuga dolore.
+                    Here you will find a collection of projects I have completed during my career!  Some may be purely front end, some back end and some both!
                 </p>
             </div>
             <div className="flex flex-wrap -m-4">
                 {projects.map((project, id) => (
                     <section className="project-map-section">
-                        <div>
-                            <img src={project.projectImg} alt={project.imageAlt}></img>
-                        </div>
-                        <div>
-                            <a className="project-title" href={project.projectLink}>{project.projectName}</a>
-                        </div>
-                        <div>
-                            <p className="project-text">{project.projectText}</p>
+                        <div className="project-div card">
+                            <div>
+                                <img className="project-image card-img-top" src={project.projectImg} alt={project.imageAlt}></img>
+                            </div>
+                            <div>
+                            <div className="card-body">
+                                <a className="project-title card-title" href={project.projectLink}>{project.projectName}</a>
+                            </div>
+                            <div>
+                                <p className="project-text card-text">{project.projectText}</p>
+                            </div>
+                            </div>
                         </div>
                     </section>
                 ))}
@@ -76,4 +78,4 @@ function Project(props) {
     )
 };
 
-export default Project
+export default Project;

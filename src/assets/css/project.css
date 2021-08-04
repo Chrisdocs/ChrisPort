@@ -6,6 +6,11 @@
     --text-hover: #ffdac1;
 }
 
+.card {
+    background-color: var(--background-sec);
+    margin-top: 5px;
+}
+
 .project-page-title {
     color: var(--primary-text);
     margin-top: 125px;
@@ -22,10 +27,17 @@
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
+    background-color: var(--text-hover);
 }
 
 .project-text {
     color: var(--text-hover);
+    padding: 10px;
     background-color: var(--background-sec);
     border-radius: 25px;
+    margin-bottom: 50px;
+}
+
+.project-image {
+    border: 10px solid var(--background-sec) ;
 }
