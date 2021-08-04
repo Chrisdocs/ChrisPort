@@ -1,5 +1,6 @@
 import React from 'react';
 import '../../assets/css/header.css';
+import Navigation from '../Navigation';
 
 function Header(props) {
 
@@ -14,7 +15,7 @@ function Header(props) {
                         </a>
                     </div>
             </div>
-
+        <Navigation></Navigation>
         </div>
     )
 

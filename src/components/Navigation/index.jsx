@@ -1,5 +1,6 @@
 import React from 'react';
 import '../../assets/css/nav.css';
+import Project from '../Project'
 
 function Navigation(props) {
 
