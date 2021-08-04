@@ -4,3 +4,14 @@
     --primary-text: #7e8aa1;
     --text-hover: #ffdac1;
 }
+
+.project-page-title {
+    color: var(--primary-text);
+    margin-top: 125px;
+}
+
+.project-page-desc {
+    color: var(--primary-text);
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
