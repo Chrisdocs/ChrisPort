@@ -63,10 +63,10 @@ function Project(props) {
                             <img src={project.projectImg} alt={project.imageAlt}></img>
                         </div>
                         <div>
-                            <a href={project.projectLink}>{project.projectName}</a>
+                            <a className="project-title" href={project.projectLink}>{project.projectName}</a>
                         </div>
                         <div>
-                            <p>{project.projectText}</p>
+                            <p className="project-text">{project.projectText}</p>
                         </div>
                     </section>
                 ))}

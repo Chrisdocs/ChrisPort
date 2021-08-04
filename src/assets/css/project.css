@@ -1,6 +1,7 @@
 /* src/assets/css/project.css */
 :root {
     --background-primary: #f8f8ff;
+    --background-sec: #9c9da8;
     --primary-text: #7e8aa1;
     --text-hover: #ffdac1;
 }
@@ -14,4 +15,17 @@
     color: var(--primary-text);
     margin-top: 50px;
     margin-bottom: 50px;
+}
+
+.project-title {
+    color: var(--primary-text);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.project-text {
+    color: var(--text-hover);
+    background-color: var(--background-sec);
+    border-radius: 25px;
 }
