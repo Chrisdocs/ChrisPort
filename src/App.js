@@ -1,4 +1,9 @@
-import React from 'react';
+import React, {Component} from 'react';
+import {
+  Route,
+  NavLink,
+  HashRouter
+} from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './assets/css/App.css';
 import Header from './components/Header';
