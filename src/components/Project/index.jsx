@@ -3,13 +3,13 @@ import '../../assets/css/project.css';
 
 function Project(props) {
 
-    const projects = [
-        {
-            projectName: "Run Buddy",
-            projectLink: "https://chrisdocs.github.io/run-buddy/",
-            projectImg: ""
-        }
-    ]
+    // const projects = [
+    //     {
+    //         projectName: "Run Buddy",
+    //         projectLink: "https://chrisdocs.github.io/run-buddy/",
+    //         projectImg: ""
+    //     }
+    // ]
 
     return (
         <section>
