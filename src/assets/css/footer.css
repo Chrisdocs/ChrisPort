@@ -1,0 +1,13 @@
+/* src/assets/css/footer.css */
+:root {
+    --background-primary: #f8f8ff;
+    --primary-text: #7e8aa1;
+    --text-hover: #ffdac1;
+}
+
+.footer-section {
+}
+
+.footer-text {
+    color: var(--primary-text);
+}
