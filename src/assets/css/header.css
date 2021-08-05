@@ -7,7 +7,7 @@
 
 .header-box{
     background-color: var(--background-primary);
-    border-bottom: 10px var(--text-hover);
+    border-bottom: 10px solid var(--text-hover);
 }
 
 .header-title-link{
