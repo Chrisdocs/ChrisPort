@@ -7,6 +7,7 @@
 
 .header-box{
     background-color: var(--background-primary);
+    border-bottom: 10px var(--text-hover);
 }
 
 .header-title-link{
@@ -23,6 +24,13 @@
 .wolf-logo{
     background-color: var(--background-primary);
     width: 144px;
+}
+
+@media only screen and (max-width: 780px) {
+    
+    .header-title-link {
+        font-size: 29px;
+    }
 }
 
 @media screen and (max-width: 550px) {
