@@ -25,7 +25,7 @@ function Project(props) {
             projectText: "lorem ipsum..."
         },
         {
-            id: 2,
+            id: 3,
             projectName: "Chat n' Learn",
             projectLink: "https://chatnlearn.herokuapp.com/",
             projectImg: chatnLearnImg,
@@ -33,7 +33,7 @@ function Project(props) {
             projectText: "lorem ipsum..."
         },
         {
-            id: 2,
+            id: 4,
             projectName: "Social Media API",
             projectLink: "https://github.com/Chrisdocs/SocNetAPI",
             projectImg: socialImg,
@@ -46,33 +46,36 @@ function Project(props) {
     return (
             <section id="projects-section" className="">
             <div className="container">
-            <div className="flex flex-col">
-                <h1 className="project-page-title">
-                    Welcome to my Projects!
-                </h1>
-                <p className="project-page-desc">
-                    Here you will find a collection of projects I have completed during my career!  Some may be purely front end, some back end and some both!
-                </p>
-            </div>
-            <div className="flex flex-wrap -m-4">
-                {projects.map((project, id) => (
-                    <section className="project-map-section">
-                        <div className="project-div card">
-                            <div>
-                                <img className="project-image card-img-top" src={project.projectImg} alt={project.imageAlt}></img>
+
+                <div className="flex flex-col">
+                    <h1 className="project-page-title">
+                        Welcome to my Projects!
+                    </h1>
+                    <p className="project-page-desc">
+                        Here you will find a collection of projects I have completed during my career!  Some may be purely front end, some back end and some both!
+                    </p>
+                </div>
+
+                <div className="flex flex-wrap -m-4">
+                    {projects.map((project, id) => (
+                        <section key={project.id} className="project-map-section">
+                            <div className="project-div card" key={project.id}>
+                                <div>
+                                    <img className="project-image card-img-top" src={project.projectImg} alt={project.imageAlt}></img>
+                                </div>
+                                <div className="card-body">
+                                <div className="title-div">
+                                    <a className="project-title card-title" href={project.projectLink}>{project.projectName}</a>
+                                </div>
+                                <div>
+                                    <p className="project-text card-text">{project.projectText}</p>
+                                </div>
+                                </div>
                             </div>
-                            <div>
-                            <div className="card-body">
-                                <a className="project-title card-title" href={project.projectLink}>{project.projectName}</a>
-                            </div>
-                            <div>
-                                <p className="project-text card-text">{project.projectText}</p>
-                            </div>
-                            </div>
-                        </div>
-                    </section>
-                ))}
-            </div>
+                        </section>
+                    ))}
+                </div>
+
             </div>
         </section>
     )

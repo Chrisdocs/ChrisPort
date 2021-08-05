@@ -8,12 +8,17 @@
 
 .card {
     background-color: var(--background-sec);
-    margin-top: 5px;
+    margin: 10px;
+}
+
+.card-body {
+    background-color: var(--background-sec);
 }
 
 .project-page-title {
     color: var(--primary-text);
     margin-top: 125px;
+    text-decoration: var(--text-hover) dotted underline;
 }
 
 .project-page-desc {
@@ -22,11 +27,17 @@
     margin-bottom: 50px;
 }
 
+.title-div {
+    background-color: var(--background-sec);
+}
+
 .project-title {
     color: var(--primary-text);
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
+    padding: 10px;
+    border-radius: 15px;
     background-color: var(--text-hover);
 }
 
@@ -34,8 +45,8 @@
     color: var(--text-hover);
     padding: 10px;
     background-color: var(--background-sec);
-    border-radius: 25px;
     margin-bottom: 50px;
+    margin-top: 30px;
 }
 
 .project-image {
