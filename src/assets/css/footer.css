@@ -7,9 +7,14 @@
 
 .footer-section {
     margin-top: 15px;
-    position: inherit;
+    position: fixed;
 }
 
 .footer-text {
     color: var(--primary-text);
+}
+
+.footer-img {
+    max-width: 50px;
+    margin: 5px 5px 5px 5px;
 }
