@@ -1,0 +1,25 @@
+/* src/assets/css/contact.css */
+:root {
+    --background-primary: #f8f8ff;
+    --background-sec: #9c9da8;
+    --primary-text: #7e8aa1;
+    --text-hover: #ffdac1;
+}
+
+.contact-title {
+    color: var(--primary-text);
+    margin-top: 125px;
+    text-decoration: var(--text-hover) dotted underline;
+}
+
+.label-title {
+    color: var(--primary-text);
+    font-weight: bold;
+    font-size: large;
+    padding-right: 5px;
+}
+
+.input-box {
+    margin-top: 10px;
+}
+
