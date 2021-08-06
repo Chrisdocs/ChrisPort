@@ -6,6 +6,8 @@
 }
 
 .footer-section {
+    margin-top: 15px;
+    position: inherit;
 }
 
 .footer-text {
