@@ -1,0 +1,13 @@
+/* src/assets/css/resume.css */
+:root {
+    --background-primary: #f8f8ff;
+    --primary-text: #7e8aa1;
+    --text-hover: #ffdac1;
+}
+
+.resume-title {
+    margin: 50px;
+    color: var(--primary-text);
+    margin-top: 125px;
+    text-decoration: var(--text-hover) dotted underline;
+}

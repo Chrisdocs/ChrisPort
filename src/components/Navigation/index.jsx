@@ -8,6 +8,7 @@ import '../../assets/css/nav.css';
 import Project from '../Project'
 import About from "../About";
 import Contact from "../Contact";
+import Resume from "../Resume";
 
 function Navigation(props) {
 
@@ -17,13 +18,16 @@ function Navigation(props) {
                 <div className="container">
                     <div className="row align-items-start">
                     <div className="col">
-                        <NavLink exact to="/About" className="nav-link" replace>About</NavLink>
+                        <NavLink exact to="/About" activeClassName="current-nav" className="nav-link" replace>About</NavLink>
                     </div>
                     <div className="col">
-                        <NavLink exact to="/Project" className="nav-link" replace>Projects</NavLink>
+                        <NavLink exact to="/Project" activeClassName="current-nav" className="nav-link" replace>Projects</NavLink>
                     </div>
                     <div className="col">
-                        <NavLink exact to="/Contact" className="nav-link" replace>Contact</NavLink>
+                        <NavLink exact to="/Contact" activeClassName="current-nav" className="nav-link" replace>Contact</NavLink>
+                    </div>
+                    <div className="col">
+                        <NavLink exact to="/Resume" activeClassName="current-nav" className="nav-link" replace>Resume</NavLink>
                     </div>
                     <div className="content">
                         <Route path="/Project" component={Project}/>
@@ -31,6 +35,8 @@ function Navigation(props) {
                         <Route path="/About" component={About} />
 
                         <Route path="/Contact" component={Contact} />
+
+                        <Route path="/Resume" component={Resume} />
                     </div>
                 </div>
             </div>

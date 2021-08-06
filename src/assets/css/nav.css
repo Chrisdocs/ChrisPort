@@ -16,3 +16,13 @@
 .nav-link:hover {
     color: var(--text-hover);
 }
+
+.nav-link:focus {
+    color: var(--primary-text);
+}
+
+.current-nav {
+    background-color: var(--text-hover);
+    color: var(--primary-text);
+    text-decoration: none;
+}
