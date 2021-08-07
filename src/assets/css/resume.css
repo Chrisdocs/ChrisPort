@@ -11,3 +11,12 @@
     margin-top: 125px;
     text-decoration: var(--text-hover) dotted underline;
 }
+
+.download {
+    text-decoration: none;
+    color: var(--primary-text);
+}
+
+.download:hover {
+    color: var(--text-hover);
+}

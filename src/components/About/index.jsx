@@ -6,9 +6,9 @@ function About(props) {
     return (
         <section className="about-section">
             <div>
-                <h2 className="about-title">
+                <h1 className="about-title">
                     About Chris
-                </h2>
+                </h1>
             </div>
             <div>
                 <img className="about-img" alt="Chris by a canyon" src={require('../../assets/img/me-2.png').default} />
