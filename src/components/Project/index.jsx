@@ -16,6 +16,7 @@ function Project(props) {
             id: 1,
             projectName: "Run Buddy",
             projectLink: "https://chrisdocs.github.io/run-buddy/",
+            projectGit: "https://github.com/Chrisdocs/run-buddy",
             projectImg: runBuddyImg,
             imageAlt: "Snippet of the Run Buddy app.",
             projectText: "A sample web App for conencting with personal trainers!"
@@ -24,6 +25,7 @@ function Project(props) {
             id: 2,
             projectName: "KnowGo",
             projectLink: "https://chrisdocs.github.io/KnowGo/",
+            projectGit: "https://github.com/Chrisdocs/KnowGo",
             projectImg: knowGoImg,
             imageAlt: "snippet of the KnowGo app.",
             projectText: "Find out weather and local information before you go!"
@@ -32,6 +34,7 @@ function Project(props) {
             id: 3,
             projectName: "Chat n' Learn",
             projectLink: "https://chatnlearn.herokuapp.com/",
+            projectGit: "https://github.com/Chrisdocs/ChatnLearn",
             projectImg: chatnLearnImg,
             imageAlt: "Snippet of the Chat and learn app.",
             projectText: "Chat with users while learning each others language!"
@@ -40,14 +43,16 @@ function Project(props) {
             id: 4,
             projectName: "Social Media API",
             projectLink: "https://github.com/Chrisdocs/SocNetAPI",
+            projectGit: "https://github.com/Chrisdocs/SocNetAPI",
             projectImg: socialImg,
             imageAlt: "image which reads Social Media Api in bold font.",
-            projectText: "An API for backend user management!"
+            projectText: "An API for all your backend user management!"
         },
         {
             id: 5,
             projectName: "Readme Generator",
             projectLink: "https://github.com/Chrisdocs/Readme-Gen",
+            projectGit: "https://github.com/Chrisdocs/Readme-Gen",
             projectImg: readmeImg,
             imageAlt: "reads Read me generator in bold font.",
             projectText: "Terminal program to help generate those posky readme.md files!"
@@ -56,6 +61,7 @@ function Project(props) {
             id: 6,
             projectName: "Task Scheduler",
             projectLink: "https://chrisdocs.github.io/calendar/",
+            projectGit: "https://github.com/Chrisdocs/calendar",
             projectImg: taskImg,
             imageAlt: "A snippet of the task scheduler web-app",
             projectText: "A simple web app for managing your day to day tasks."
@@ -128,8 +134,11 @@ function Project(props) {
                                 <div className="card-body">
                                     <div className="title-div">
                                         <a className="project-title card-title" href={projects[0].projectLink}>{projects[0].projectName}</a>
+                                        <a className="gitlink" href={projects[0].projectGit}>
+                                        <img className="gitimg" src={require('../../assets/img/github-icon2.png').default}/>
+                                        </a>
                                     </div>
-                                    <div>
+                                    <div className="gitlink">
                                         <p className="project-text card-text">{projects[0].projectText}</p>
                                     </div>
                                 </div>
@@ -144,6 +153,9 @@ function Project(props) {
                                 <div className="card-body">
                                     <div className="title-div">
                                         <a className="project-title card-title" href={projects[1].projectLink}>{projects[1].projectName}</a>
+                                        <a className="gitlink" href={projects[1].projectGit}>
+                                        <img className="gitimg" src={require('../../assets/img/github-icon2.png').default}/>
+                                        </a>
                                     </div>
                                     <div>
                                         <p className="project-text card-text">{projects[1].projectText}</p>
@@ -160,6 +172,9 @@ function Project(props) {
                                 <div className="card-body">
                                     <div className="title-div">
                                         <a className="project-title card-title" href={projects[2].projectLink}>{projects[2].projectName}</a>
+                                        <a className="gitlink" href={projects[2].projectGit}>
+                                        <img className="gitimg" src={require('../../assets/img/github-icon2.png').default}/>
+                                        </a>
                                     </div>
                                     <div>
                                         <p className="project-text card-text">{projects[2].projectText}</p>
@@ -176,6 +191,9 @@ function Project(props) {
                                 <div className="card-body">
                                     <div className="title-div">
                                         <a className="project-title card-title" href={projects[3].projectLink}>{projects[3].projectName}</a>
+                                        <a className="gitlink" href={projects[3].projectGit}>
+                                        <img className="gitimg" src={require('../../assets/img/github-icon2.png').default}/>
+                                        </a>
                                     </div>
                                     <div>
                                         <p className="project-text card-text">{projects[3].projectText}</p>
@@ -192,6 +210,9 @@ function Project(props) {
                                 <div className="card-body">
                                     <div className="title-div">
                                         <a className="project-title card-title" href={projects[4].projectLink}>{projects[4].projectName}</a>
+                                        <a className="gitlink" href={projects[4].projectGit}>
+                                        <img className="gitimg" src={require('../../assets/img/github-icon2.png').default}/>
+                                        </a>
                                     </div>
                                     <div>
                                         <p className="project-text card-text">{projects[4].projectText}</p>
@@ -208,6 +229,9 @@ function Project(props) {
                                 <div className="card-body">
                                     <div className="title-div">
                                         <a className="project-title card-title" href={projects[5].projectLink}>{projects[5].projectName}</a>
+                                        <a className="gitlink" href={projects[5].projectGit}>
+                                        <img className="gitimg" src={require('../../assets/img/github-icon2.png').default}/>
+                                        </a>
                                     </div>
                                     <div>
                                         <p className="project-text card-text">{projects[5].projectText}</p>
