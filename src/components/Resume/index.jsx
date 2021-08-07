@@ -10,6 +10,20 @@ function Resume(props) {
             <a className="download" href={require("../../assets/img/resume.png").default} download>
                 <p>Dowload a copy!</p>
             </a>
+            <div>
+                <h2 className='prof-glance'>Proficiencies at a glance.</h2>
+                <ul className='list-prof'>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Javascript</li>
+                    <li>MySQL</li>
+                    <li>NoSQL</li>
+                    <li>MongoDB</li>
+                    <li>Express</li>
+                    <li>React</li>
+                    <li>Node.js</li>
+                </ul>
+            </div>
         </section>
     )
 }
