@@ -16,6 +16,18 @@
   pointer-events: none;
 }
 
+.main-content {
+  margin-top: 200px;
+}
+
+.main-hello {
+  color: var(--primary-text);
+}
+
+.main-text {
+  color: var(--primary-text);
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
