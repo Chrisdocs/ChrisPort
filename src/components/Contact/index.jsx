@@ -50,7 +50,7 @@ function ContactForm() {
 
                 <div className="form-group">
                     <label className="label-title" htmlFor="name">Name:</label>
-                    <input type="text" className="form-control" type="text" name="name" defaultValue={name} onBlur={handleChange} />
+                    <input type="text" className="form-control" type="text" name="name" placeholder="Zaphod Beeblebrox" defaultValue={name} onBlur={handleChange} />
                 </div>
 
                 <div className="form-group">
