@@ -8,6 +8,7 @@
 .footer-section {
     margin-top: 15px;
     position: fixed;
+    background-color: var(--background-primary);
 }
 
 .footer-text {

@@ -9,7 +9,6 @@
 .card {
     background-color: var(--background-sec);
     margin: 10px;
-    max-width: 600px;
 }
 
 .card-body {

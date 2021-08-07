@@ -28,7 +28,7 @@ function Project(props) {
             projectGit: "https://github.com/Chrisdocs/KnowGo",
             projectImg: knowGoImg,
             imageAlt: "snippet of the KnowGo app.",
-            projectText: "Find out weather and local information before you go!"
+            projectText: "Search and find out weather and local information before you go!"
         },
         {
             id: 3,
@@ -37,7 +37,7 @@ function Project(props) {
             projectGit: "https://github.com/Chrisdocs/ChatnLearn",
             projectImg: chatnLearnImg,
             imageAlt: "Snippet of the Chat and learn app.",
-            projectText: "Chat with users while learning each others language!"
+            projectText: "Chat with other users while learning each others native language!"
         },
         {
             id: 4,
@@ -46,7 +46,7 @@ function Project(props) {
             projectGit: "https://github.com/Chrisdocs/SocNetAPI",
             projectImg: socialImg,
             imageAlt: "image which reads Social Media Api in bold font.",
-            projectText: "An API for all your backend user management!"
+            projectText: "An API for all your backend user management! and session storage!"
         },
         {
             id: 5,
@@ -125,9 +125,9 @@ function Project(props) {
             </div>
 
             <div>
-                <Carousel responsive={responsive}>
+                <Carousel responsive={responsive} infinite={true} swipeable={true} removeArrowOnDeviceType={["tablet", "mobile"]}>
                         <div>
-                            <div className="card">
+                            <div className="card shadow p-1 mb-5 bg-white rounded">
                                 <div>
                                     <img className="card-img-top" src={projects[0].projectImg}></img>
                                 </div>
@@ -146,7 +146,7 @@ function Project(props) {
                         </div>
 
                         <div>
-                            <div className="card">
+                            <div className="card shadow p-1 mb-5 bg-white rounded">
                                 <div>
                                     <img className="card-img-top" src={projects[1].projectImg}></img>
                                 </div>
@@ -165,7 +165,7 @@ function Project(props) {
                         </div>
 
                         <div>
-                            <div className="card">
+                            <div className="card shadow p-1 mb-5 bg-white rounded">
                                 <div>
                                     <img className="card-img-top" src={projects[2].projectImg}></img>
                                 </div>
@@ -184,7 +184,7 @@ function Project(props) {
                         </div>
 
                         <div>
-                            <div className="card">
+                            <div className="card shadow p-1 mb-5 bg-white rounded">
                                 <div>
                                     <img className="card-img-top" src={projects[3].projectImg}></img>
                                 </div>
@@ -203,7 +203,7 @@ function Project(props) {
                         </div>
 
                         <div>
-                            <div className="card">
+                            <div className="card shadow p-1 mb-5 bg-white rounded">
                                 <div>
                                     <img className="card-img-top" src={projects[4].projectImg}></img>
                                 </div>
@@ -222,7 +222,7 @@ function Project(props) {
                         </div>
 
                         <div>
-                            <div className="card">
+                            <div className="card shadow p-1 mb-5 bg-white rounded">
                                 <div>
                                     <img className="card-img-top" src={projects[5].projectImg}></img>
                                 </div>
