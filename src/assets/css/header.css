@@ -1,20 +1,30 @@
 /* src/assets/css/header.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Limelight&display=swap');
+
 :root {
     --background-primary: #f8f8ff;
+    --background-sec: #9c9da8;
     --primary-text: #7e8aa1;
     --text-hover: #ffdac1;
 }
 
 .header-box{
-    background-color: var(--background-primary);
+    background-color: var(--background-sec);
     border-bottom: 10px solid var(--text-hover);
 }
 
+.col-3 {
+    background-color: var(--background-sec);
+}
+
 .header-title-link{
-    background-color: var(--background-primary);
-    color: var(--primary-text);
+    background-color: var(--background-sec );
+    color: var(--background-primary);
     text-decoration: none;
+    font-family: 'Limelight';
     font-size: 42px;
+    padding: 10px;
 }
 
 .header-title-link:hover {
@@ -24,6 +34,12 @@
 .wolf-logo{
     background-color: var(--background-primary);
     width: 144px;
+}
+
+@media only screen and (max-width: 1400px) {
+    .header-title-link{
+        font-size: 38px;
+    }
 }
 
 @media only screen and (max-width: 780px) {

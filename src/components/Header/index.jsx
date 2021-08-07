@@ -10,7 +10,7 @@ function Header(props) {
                     <div className="col-3">
                         <img className="wolf-logo" src={require('../../assets/img/wolf-logo2.png').default} alt={"wolf and moon logo"} />
                     </div>
-                    <div className="col-6">
+                    <div className="col-6 title-div">
                         <a href="/" className="header-title-link">{`{Wolfe}`} Web.Development
                         </a>
                     </div>
