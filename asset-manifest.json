@@ -1,26 +1,26 @@
 {
   "files": {
     "main.css": "/reactport/static/css/main.d6570acc.chunk.css",
-    "main.js": "/reactport/static/js/main.643faf31.chunk.js",
-    "main.js.map": "/reactport/static/js/main.643faf31.chunk.js.map",
+    "main.js": "/reactport/static/js/main.319ac10d.chunk.js",
+    "main.js.map": "/reactport/static/js/main.319ac10d.chunk.js.map",
     "runtime-main.js": "/reactport/static/js/runtime-main.686d0816.js",
     "runtime-main.js.map": "/reactport/static/js/runtime-main.686d0816.js.map",
     "static/css/2.81c4357d.chunk.css": "/reactport/static/css/2.81c4357d.chunk.css",
-    "static/js/2.2f46a4a5.chunk.js": "/reactport/static/js/2.2f46a4a5.chunk.js",
-    "static/js/2.2f46a4a5.chunk.js.map": "/reactport/static/js/2.2f46a4a5.chunk.js.map",
+    "static/js/2.bbd76216.chunk.js": "/reactport/static/js/2.bbd76216.chunk.js",
+    "static/js/2.bbd76216.chunk.js.map": "/reactport/static/js/2.bbd76216.chunk.js.map",
     "static/js/3.b60776b2.chunk.js": "/reactport/static/js/3.b60776b2.chunk.js",
     "static/js/3.b60776b2.chunk.js.map": "/reactport/static/js/3.b60776b2.chunk.js.map",
     "index.html": "/reactport/index.html",
     "static/css/2.81c4357d.chunk.css.map": "/reactport/static/css/2.81c4357d.chunk.css.map",
     "static/css/main.d6570acc.chunk.css.map": "/reactport/static/css/main.d6570acc.chunk.css.map",
-    "static/js/2.2f46a4a5.chunk.js.LICENSE.txt": "/reactport/static/js/2.2f46a4a5.chunk.js.LICENSE.txt",
+    "static/js/2.bbd76216.chunk.js.LICENSE.txt": "/reactport/static/js/2.bbd76216.chunk.js.LICENSE.txt",
+    "static/media/bikesleuth.b13c61a9.png": "/reactport/static/media/bikesleuth.b13c61a9.png",
     "static/media/chat.2c0b4e9e.png": "/reactport/static/media/chat.2c0b4e9e.png",
     "static/media/codewars-icon.png": "/reactport/static/media/codewars-icon.a34acf95.png",
     "static/media/knowgo.092c26bb.png": "/reactport/static/media/knowgo.092c26bb.png",
     "static/media/me-2.png": "/reactport/static/media/me-2.c0b18308.png",
     "static/media/resume.png": "/reactport/static/media/resume.70124525.png",
     "static/media/styles.css": "/reactport/static/media/revicons.e8746a62.woff",
-    "static/media/run-snip.b57beca5.png": "/reactport/static/media/run-snip.b57beca5.png",
     "static/media/schImg.e8889243.png": "/reactport/static/media/schImg.e8889243.png",
     "static/media/wolf-logo2.png": "/reactport/static/media/wolf-logo2.5e1a8928.png",
     "static/media/wolf-logo3.png": "/reactport/static/media/wolf-logo3.5b723835.png"
@@ -28,8 +28,8 @@
   "entrypoints": [
     "static/js/runtime-main.686d0816.js",
     "static/css/2.81c4357d.chunk.css",
-    "static/js/2.2f46a4a5.chunk.js",
+    "static/js/2.bbd76216.chunk.js",
     "static/css/main.d6570acc.chunk.css",
-    "static/js/main.643faf31.chunk.js"
+    "static/js/main.319ac10d.chunk.js"
   ]
 }
