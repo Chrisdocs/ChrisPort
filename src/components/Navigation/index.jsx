@@ -2,13 +2,15 @@ import React from 'react';
 import {
     Route,
     NavLink,
-    HashRouter
+    HashRouter,
+    Switch
 } from "react-router-dom";
 import '../../assets/css/nav.css';
 import Project from '../Project'
 import About from "../About";
 import Contact from "../Contact";
 import Resume from "../Resume";
+import NoMatch from '../../../../deepthought/client/src/pages/NoMatch';
 
 function Navigation(props) {
 
@@ -30,13 +32,17 @@ function Navigation(props) {
                         <NavLink exact to="/Resume" activeClassName="current-nav" className="nav-link" replace>Resume</NavLink>
                     </div>
                     <div className="content">
-                        <Route path="/Project" component={Project}/>
+                        <Switch>
+                            <Route path="/Project" component={Project}/>
 
-                        <Route path="/About" component={About} />
+                            <Route path="/About" component={About} />
 
-                        <Route path="/Contact" component={Contact} />
+                            <Route path="/Contact" component={Contact} />
 
-                        <Route path="/Resume" component={Resume} />
+                            <Route path="/Resume" component={Resume} />
+
+                            <Route component={NoMatch} />
+                        </Switch>
                     </div>
                 </div>
             </div>

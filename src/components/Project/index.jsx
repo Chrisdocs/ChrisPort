@@ -2,7 +2,7 @@ import React from 'react';
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import '../../assets/css/project.css';
-import runBuddyImg from '../../assets/img/run-snip.png';
+import bikeSleuth from '../../assets/img/bikesleuth.png'
 import knowGoImg from '../../assets/img/knowgo.png';
 import chatnLearnImg from '../../assets/img/chat.png';
 import socialImg from '../../assets/img/social.png';
@@ -14,12 +14,12 @@ function Project(props) {
     const projects = [
         {
             id: 1,
-            projectName: "Run Buddy",
+            projectName: "BikeSleuth",
             projectLink: "https://chrisdocs.github.io/run-buddy/",
-            projectGit: "https://github.com/Chrisdocs/run-buddy",
+            projectGit: "https://github.com/Chrisdocs/FindMyBike",
             projectImg: runBuddyImg,
-            imageAlt: "Snippet of the Run Buddy app.",
-            projectText: "A sample web App for conencting with personal trainers!"
+            imageAlt: "Snippet of the Bike Sleuth app.",
+            projectText: "A web app to help users find lost bikes!!"
         },
         {
             id: 2,
@@ -126,24 +126,6 @@ function Project(props) {
 
             <div>
                 <Carousel responsive={responsive} infinite={true} swipeable={true} removeArrowOnDeviceType={["tablet", "mobile"]}>
-                        <div>
-                            <div className="card shadow p-1 mb-5 bg-white rounded">
-                                <div>
-                                    <img className="card-img-top" src={projects[0].projectImg}></img>
-                                </div>
-                                <div className="card-body">
-                                    <div className="title-div">
-                                        <a className="project-title card-title" href={projects[0].projectLink}>{projects[0].projectName}</a>
-                                        <a className="gitlink" href={projects[0].projectGit}>
-                                        <img className="gitimg" src={require('../../assets/img/github-icon2.png').default}/>
-                                        </a>
-                                    </div>
-                                    <div className="gitlink">
-                                        <p className="project-text card-text">{projects[0].projectText}</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
 
                         <div>
                             <div className="card shadow p-1 mb-5 bg-white rounded">
