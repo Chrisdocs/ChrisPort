@@ -17,7 +17,7 @@ function Project(props) {
             projectName: "BikeSleuth",
             projectLink: "https://chrisdocs.github.io/run-buddy/",
             projectGit: "https://github.com/Chrisdocs/FindMyBike",
-            projectImg: runBuddyImg,
+            projectImg: bikeSleuth,
             imageAlt: "Snippet of the Bike Sleuth app.",
             projectText: "A web app to help users find lost bikes!!"
         },
@@ -130,13 +130,32 @@ function Project(props) {
                         <div>
                             <div className="card shadow p-1 mb-5 bg-white rounded">
                                 <div>
+                                    <img className="card-img-top" src={projects[0].projectImg}></img>
+                                </div>
+                                <div className="card-body">
+                                    <div className="title-div">
+                                        <a className="project-title card-title" href={projects[0].projectLink}>{projects[0].projectName}</a>
+                                        <a className="gitlink" href={projects[0].projectGit}>
+                                        <img className="gitimg" src={require('../../assets/img/github-icon2.png').default} alt={projects[0].imageAlt}/>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <p className="project-text card-text">{projects[0].projectText}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div className="card shadow p-1 mb-5 bg-white rounded">
+                                <div>
                                     <img className="card-img-top" src={projects[1].projectImg}></img>
                                 </div>
                                 <div className="card-body">
                                     <div className="title-div">
                                         <a className="project-title card-title" href={projects[1].projectLink}>{projects[1].projectName}</a>
                                         <a className="gitlink" href={projects[1].projectGit}>
-                                        <img className="gitimg" src={require('../../assets/img/github-icon2.png').default}/>
+                                        <img className="gitimg" src={require('../../assets/img/github-icon2.png').default} alt={projects[1].imageAlt}/>
                                         </a>
                                     </div>
                                     <div>

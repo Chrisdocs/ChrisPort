@@ -10,7 +10,7 @@ import Project from '../Project'
 import About from "../About";
 import Contact from "../Contact";
 import Resume from "../Resume";
-import NoMatch from '../../../../deepthought/client/src/pages/NoMatch';
+import NoMatch from '../../pages/NoMatch';
 
 function Navigation(props) {
 
