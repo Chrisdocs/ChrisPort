@@ -15,13 +15,10 @@ function About(props) {
             </div>
             <div className="about-text-div">
                 <p className="about-text" id="text-top">
-                    Based out of Austin Texas, Florida born, developing my web design tool belt and going on adventures in nature fills most of my free time. With a mind often caught between a love for the outdoors and technology, bringing them together whenever possible creates a unique challenge.
-                </p>
-                <p className="about-text">
-                    A number of careers have come and gone over the years, but they have all imparted their own valuable lessons.  From architecture to photography, and retail management to gig worker, all of which have had great things to teach and introductiions to a variety of concepts.  These experiences have built a knowledge base which unites design and creativity with time and people management.
-                </p>
-                <p className="about-text" id="text-bottom">
-                    There is a great belief in life which I share, “keep it simple”.  Often said but hard to follow. Whether a thousand miles from the closest habitation on a backpacking trip, or working on a project at home, It’s never a good idea to complicate things.  To successfully bring this concept into design, coding, and all endeavors is the ultimate goal.
+                Full stack developer with a certificate from the University of Texas at Austin Coding Bootcamp. I have worked with a few small teams to develop MERN apps which focus on mobile-first design.  Some of these projects include HTML, CSS, JavaScript, jQuery, Express.js, React.js, Node.js, MongoDB, MySQL, Git, and more. I am excited to continue to develop these skills to enhance my career as a developer.
+
+I am always in pursuit of tasks which challenge & engage me, pushing my growth forward to best serve the needs of my team.  My history as a team leader and business owner have equipped me with agility, business acumen, critical & strategic thinking, creativity, interpersonal awareness, people leadership, conflict management, pragmatism & resilience. I strive to translate these skills into my role as a developer. I have the background, skills and desire to become a strong future leader in this industry.
+
                 </p>
             </div>
         </section>

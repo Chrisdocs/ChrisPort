@@ -38,7 +38,26 @@ function ContactForm() {
     function handleSubmit(e) {
         e.preventDefault();
         console.log(formState);
+
+        fetch('http://localhost:3002/send', {
+            method: "POST",
+            body: JSON.stringify(formState),
+            headers: {
+              'Accept': 'application/json',
+              'Content-Type': 'application/json'
+            },
+          }).then(
+          (response) => (response.json())
+            ).then((response)=> {
+          if (response.status === 'success') {
+            alert("Message Sent.");
+            setFormState({ name: '', email: '', message: ''})
+          } else if(response.status === 'fail') {
+            alert("Message failed to send.")
+            }
+        })
     }
+    
 
     // console.log(formState)
 
@@ -74,7 +93,19 @@ function ContactForm() {
             </form>
 
         </section>
-    )
+    );
+}
+
+function onNameChange(event) {
+    this.setState({name: event.target.value})
+}
+
+function onEmailChange(event) {
+    this.setState({email: event.target.value})
+}
+
+function onMessageChange(event) {
+    this.setState({message: event.target.value})
 }
 
 export default ContactForm;

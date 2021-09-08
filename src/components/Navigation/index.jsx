@@ -41,6 +41,8 @@ function Navigation(props) {
 
                             <Route path="/Resume" component={Resume} />
 
+                            <Route path="/" component={About} />
+
                             <Route component={NoMatch} />
                         </Switch>
                     </div>
