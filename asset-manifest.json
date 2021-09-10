@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/reactport/static/css/main.d6570acc.chunk.css",
-    "main.js": "/reactport/static/js/main.319ac10d.chunk.js",
-    "main.js.map": "/reactport/static/js/main.319ac10d.chunk.js.map",
-    "runtime-main.js": "/reactport/static/js/runtime-main.686d0816.js",
-    "runtime-main.js.map": "/reactport/static/js/runtime-main.686d0816.js.map",
+    "main.js": "/reactport/static/js/main.7bcd80da.chunk.js",
+    "main.js.map": "/reactport/static/js/main.7bcd80da.chunk.js.map",
+    "runtime-main.js": "/reactport/static/js/runtime-main.fb5ab6f7.js",
+    "runtime-main.js.map": "/reactport/static/js/runtime-main.fb5ab6f7.js.map",
     "static/css/2.81c4357d.chunk.css": "/reactport/static/css/2.81c4357d.chunk.css",
-    "static/js/2.bbd76216.chunk.js": "/reactport/static/js/2.bbd76216.chunk.js",
-    "static/js/2.bbd76216.chunk.js.map": "/reactport/static/js/2.bbd76216.chunk.js.map",
-    "static/js/3.b60776b2.chunk.js": "/reactport/static/js/3.b60776b2.chunk.js",
-    "static/js/3.b60776b2.chunk.js.map": "/reactport/static/js/3.b60776b2.chunk.js.map",
+    "static/js/2.a610317a.chunk.js": "/reactport/static/js/2.a610317a.chunk.js",
+    "static/js/2.a610317a.chunk.js.map": "/reactport/static/js/2.a610317a.chunk.js.map",
+    "static/js/3.663cab96.chunk.js": "/reactport/static/js/3.663cab96.chunk.js",
+    "static/js/3.663cab96.chunk.js.map": "/reactport/static/js/3.663cab96.chunk.js.map",
     "index.html": "/reactport/index.html",
     "static/css/2.81c4357d.chunk.css.map": "/reactport/static/css/2.81c4357d.chunk.css.map",
     "static/css/main.d6570acc.chunk.css.map": "/reactport/static/css/main.d6570acc.chunk.css.map",
-    "static/js/2.bbd76216.chunk.js.LICENSE.txt": "/reactport/static/js/2.bbd76216.chunk.js.LICENSE.txt",
+    "static/js/2.a610317a.chunk.js.LICENSE.txt": "/reactport/static/js/2.a610317a.chunk.js.LICENSE.txt",
     "static/media/bikesleuth.b13c61a9.png": "/reactport/static/media/bikesleuth.b13c61a9.png",
     "static/media/chat.2c0b4e9e.png": "/reactport/static/media/chat.2c0b4e9e.png",
     "static/media/codewars-icon.png": "/reactport/static/media/codewars-icon.a34acf95.png",
@@ -26,10 +26,10 @@
     "static/media/wolf-logo3.png": "/reactport/static/media/wolf-logo3.5b723835.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.686d0816.js",
+    "static/js/runtime-main.fb5ab6f7.js",
     "static/css/2.81c4357d.chunk.css",
-    "static/js/2.bbd76216.chunk.js",
+    "static/js/2.a610317a.chunk.js",
     "static/css/main.d6570acc.chunk.css",
-    "static/js/main.319ac10d.chunk.js"
+    "static/js/main.7bcd80da.chunk.js"
   ]
 }
