@@ -1,15 +1,17 @@
-var express = require('express');
-var router = express.Router();
-var nodemailer = require('nodemailer');
-var cors = require('cors');
+const express = require('express');
+const router = express.Router();
+const nodemailer = require('nodemailer');
+const cors = require('cors');
+require("dotenv").config();
 const creds = require('./config.js');
 
 var transport = {
-    host: 'smtp.example.com', // Don’t forget to replace with the SMTP host of your provider
-    port: 587,
+    // host: 'smtp.gmail.com', // Don’t forget to replace with the SMTP host of your provider
+    // port: 587,
+    service: 'gmail',
     auth: {
-    user: creds.USER,
-    pass: creds.PASS
+        user: process.env.EMAIL,
+        pass: process.env.PASSWORD
   }
 }
 
@@ -32,7 +34,7 @@ router.post('/send', (req, res, next) => {
   var mail = {
     from: name,
     to: 'chriswolfe.dev@gmail.com',  // Change to email address that you want to receive messages on
-    subject: 'New Message from Contact Form',
+    subject: 'New Message from ', name,
     text: content
   }
 
