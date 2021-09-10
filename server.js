@@ -3,7 +3,12 @@ const router = express.Router();
 const nodemailer = require('nodemailer');
 const cors = require('cors');
 require("dotenv").config();
-const creds = require('./config.js');
+
+const app = express()
+app.use(cors())
+app.use(express.json())
+app.use('/', router)
+app.listen(3002, () => console.log("Server running"));
 
 var transport = {
     // host: 'smtp.gmail.com', // Don’t forget to replace with the SMTP host of your provider
@@ -51,8 +56,3 @@ router.post('/send', (req, res, next) => {
   })
 })
 
-const app = express()
-app.use(cors())
-app.use(express.json())
-app.use('/', router)
-app.listen(3002)
