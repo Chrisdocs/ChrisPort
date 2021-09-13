@@ -42,14 +42,14 @@ function ContactForm() {
 
         axios({
             method: "POST",
-            url: "https://chrisdocs.github.io/send",
+            url: "http://localhost:3002/send",
             data: formState
         }).then((response) => {
             if (response.data.status === 'success') {
                 alert("Message Sent.");
                 setFormState({name: '', email: '', message: ''})
             } else if (response.data.status === 'fail') {
-                alert("Message failed to send.")
+                alert("Message failed to send")
             }
         })
     }
@@ -65,7 +65,7 @@ function ContactForm() {
 
                 <div className="form-group">
                     <label className="label-title" htmlFor="name">Name:</label>
-                    <input type="text" className="form-control" type="text" name="name" placeholder="Zaphod Beeblebrox" defaultValue={name} onBlur={handleChange} />
+                    <input type="text" className="form-control" name="name" placeholder="Zaphod Beeblebrox" defaultValue={name} onBlur={handleChange} />
                 </div>
 
                 <div className="form-group">
@@ -92,16 +92,5 @@ function ContactForm() {
     );
 }
 
-function onNameChange(event) {
-    this.setState({name: event.target.value})
-}
-
-function onEmailChange(event) {
-    this.setState({email: event.target.value})
-}
-
-function onMessageChange(event) {
-    this.setState({message: event.target.value})
-}
 
 export default ContactForm;

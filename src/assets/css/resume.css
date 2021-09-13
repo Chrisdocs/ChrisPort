@@ -24,9 +24,11 @@
 .prof-glance {
     padding-top: 50px;
     color: var(--primary-text);
+    text-align: center;
 }
 
 .list-prof {
     list-style: none;
     color: var(--primary-text);
+    align-content: center;
 }

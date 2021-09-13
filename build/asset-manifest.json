@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/reactport/static/css/main.d6570acc.chunk.css",
-    "main.js": "/reactport/static/js/main.d7d5116a.chunk.js",
-    "main.js.map": "/reactport/static/js/main.d7d5116a.chunk.js.map",
+    "main.css": "/reactport/static/css/main.aac1f760.chunk.css",
+    "main.js": "/reactport/static/js/main.70e40cce.chunk.js",
+    "main.js.map": "/reactport/static/js/main.70e40cce.chunk.js.map",
     "runtime-main.js": "/reactport/static/js/runtime-main.fb5ab6f7.js",
     "runtime-main.js.map": "/reactport/static/js/runtime-main.fb5ab6f7.js.map",
     "static/css/2.81c4357d.chunk.css": "/reactport/static/css/2.81c4357d.chunk.css",
-    "static/js/2.a610317a.chunk.js": "/reactport/static/js/2.a610317a.chunk.js",
-    "static/js/2.a610317a.chunk.js.map": "/reactport/static/js/2.a610317a.chunk.js.map",
+    "static/js/2.c177edc0.chunk.js": "/reactport/static/js/2.c177edc0.chunk.js",
+    "static/js/2.c177edc0.chunk.js.map": "/reactport/static/js/2.c177edc0.chunk.js.map",
     "static/js/3.663cab96.chunk.js": "/reactport/static/js/3.663cab96.chunk.js",
     "static/js/3.663cab96.chunk.js.map": "/reactport/static/js/3.663cab96.chunk.js.map",
     "index.html": "/reactport/index.html",
     "static/css/2.81c4357d.chunk.css.map": "/reactport/static/css/2.81c4357d.chunk.css.map",
-    "static/css/main.d6570acc.chunk.css.map": "/reactport/static/css/main.d6570acc.chunk.css.map",
-    "static/js/2.a610317a.chunk.js.LICENSE.txt": "/reactport/static/js/2.a610317a.chunk.js.LICENSE.txt",
-    "static/media/bikesleuth.b13c61a9.png": "/reactport/static/media/bikesleuth.b13c61a9.png",
+    "static/css/main.aac1f760.chunk.css.map": "/reactport/static/css/main.aac1f760.chunk.css.map",
+    "static/js/2.c177edc0.chunk.js.LICENSE.txt": "/reactport/static/js/2.c177edc0.chunk.js.LICENSE.txt",
+    "static/media/bikesleuth.61ae2d5f.png": "/reactport/static/media/bikesleuth.61ae2d5f.png",
     "static/media/chat.2c0b4e9e.png": "/reactport/static/media/chat.2c0b4e9e.png",
     "static/media/codewars-icon.png": "/reactport/static/media/codewars-icon.a34acf95.png",
     "static/media/knowgo.092c26bb.png": "/reactport/static/media/knowgo.092c26bb.png",
     "static/media/me-2.png": "/reactport/static/media/me-2.c0b18308.png",
-    "static/media/resume.png": "/reactport/static/media/resume.70124525.png",
+    "static/media/resume.png": "/reactport/static/media/resume.cb8b2bff.png",
     "static/media/styles.css": "/reactport/static/media/revicons.e8746a62.woff",
     "static/media/schImg.e8889243.png": "/reactport/static/media/schImg.e8889243.png",
     "static/media/wolf-logo2.png": "/reactport/static/media/wolf-logo2.5e1a8928.png",
@@ -28,8 +28,8 @@
   "entrypoints": [
     "static/js/runtime-main.fb5ab6f7.js",
     "static/css/2.81c4357d.chunk.css",
-    "static/js/2.a610317a.chunk.js",
-    "static/css/main.d6570acc.chunk.css",
-    "static/js/main.d7d5116a.chunk.js"
+    "static/js/2.c177edc0.chunk.js",
+    "static/css/main.aac1f760.chunk.css",
+    "static/js/main.70e40cce.chunk.js"
   ]
 }

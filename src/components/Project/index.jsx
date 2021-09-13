@@ -19,7 +19,7 @@ function Project(props) {
             projectGit: "https://github.com/Chrisdocs/FindMyBike",
             projectImg: bikeSleuth,
             imageAlt: "Snippet of the Bike Sleuth app.",
-            projectText: "A web app to help users find lost bikes!!"
+            projectText: "A web app to help users find lost bikes in their city!!"
         },
         {
             id: 2,
@@ -130,13 +130,13 @@ function Project(props) {
                         <div>
                             <div className="card shadow p-1 mb-5 bg-white rounded">
                                 <div>
-                                    <img className="card-img-top" src={projects[0].projectImg}></img>
+                                    <img className="card-img-top" src={projects[0].projectImg} alt={projects[0].imageAlt}></img>
                                 </div>
                                 <div className="card-body">
                                     <div className="title-div">
                                         <a className="project-title card-title" href={projects[0].projectLink}>{projects[0].projectName}</a>
                                         <a className="gitlink" href={projects[0].projectGit}>
-                                        <img className="gitimg" src={require('../../assets/img/github-icon2.png').default} alt={projects[0].imageAlt}/>
+                                        <img className="gitimg" src={require('../../assets/img/github-icon2.png').default} alt="github icon"/>
                                         </a>
                                     </div>
                                     <div>
@@ -149,13 +149,13 @@ function Project(props) {
                         <div>
                             <div className="card shadow p-1 mb-5 bg-white rounded">
                                 <div>
-                                    <img className="card-img-top" src={projects[1].projectImg}></img>
+                                    <img className="card-img-top" src={projects[1].projectImg} alt={projects[1].imageAlt}></img>
                                 </div>
                                 <div className="card-body">
                                     <div className="title-div">
                                         <a className="project-title card-title" href={projects[1].projectLink}>{projects[1].projectName}</a>
                                         <a className="gitlink" href={projects[1].projectGit}>
-                                        <img className="gitimg" src={require('../../assets/img/github-icon2.png').default} alt={projects[1].imageAlt}/>
+                                        <img className="gitimg" src={require('../../assets/img/github-icon2.png').default} alt="github icon"/>
                                         </a>
                                     </div>
                                     <div>
@@ -168,13 +168,13 @@ function Project(props) {
                         <div>
                             <div className="card shadow p-1 mb-5 bg-white rounded">
                                 <div>
-                                    <img className="card-img-top" src={projects[2].projectImg}></img>
+                                    <img className="card-img-top" src={projects[2].projectImg} alt={projects[2].imageAlt}></img>
                                 </div>
                                 <div className="card-body">
                                     <div className="title-div">
                                         <a className="project-title card-title" href={projects[2].projectLink}>{projects[2].projectName}</a>
                                         <a className="gitlink" href={projects[2].projectGit}>
-                                        <img className="gitimg" src={require('../../assets/img/github-icon2.png').default}/>
+                                        <img className="gitimg" src={require('../../assets/img/github-icon2.png').default} alt="github icon"/>
                                         </a>
                                     </div>
                                     <div>
@@ -187,13 +187,13 @@ function Project(props) {
                         <div>
                             <div className="card shadow p-1 mb-5 bg-white rounded">
                                 <div>
-                                    <img className="card-img-top" src={projects[3].projectImg}></img>
+                                    <img className="card-img-top" src={projects[3].projectImg} alt={projects[3].imageAlt}></img>
                                 </div>
                                 <div className="card-body">
                                     <div className="title-div">
                                         <a className="project-title card-title" href={projects[3].projectLink}>{projects[3].projectName}</a>
                                         <a className="gitlink" href={projects[3].projectGit}>
-                                        <img className="gitimg" src={require('../../assets/img/github-icon2.png').default}/>
+                                        <img className="gitimg" src={require('../../assets/img/github-icon2.png').default} alt="github icon"/>
                                         </a>
                                     </div>
                                     <div>
@@ -206,13 +206,13 @@ function Project(props) {
                         <div>
                             <div className="card shadow p-1 mb-5 bg-white rounded">
                                 <div>
-                                    <img className="card-img-top" src={projects[4].projectImg}></img>
+                                    <img className="card-img-top" src={projects[4].projectImg} alt={projects[4].imageAlt}></img>
                                 </div>
                                 <div className="card-body">
                                     <div className="title-div">
                                         <a className="project-title card-title" href={projects[4].projectLink}>{projects[4].projectName}</a>
                                         <a className="gitlink" href={projects[4].projectGit}>
-                                        <img className="gitimg" src={require('../../assets/img/github-icon2.png').default}/>
+                                        <img className="gitimg" src={require('../../assets/img/github-icon2.png').default} alt="github icon"/>
                                         </a>
                                     </div>
                                     <div>
@@ -225,13 +225,13 @@ function Project(props) {
                         <div>
                             <div className="card shadow p-1 mb-5 bg-white rounded">
                                 <div>
-                                    <img className="card-img-top" src={projects[5].projectImg}></img>
+                                    <img className="card-img-top" src={projects[5].projectImg} alt={projects[5].imageAlt}></img>
                                 </div>
                                 <div className="card-body">
                                     <div className="title-div">
                                         <a className="project-title card-title" href={projects[5].projectLink}>{projects[5].projectName}</a>
                                         <a className="gitlink" href={projects[5].projectGit}>
-                                        <img className="gitimg" src={require('../../assets/img/github-icon2.png').default}/>
+                                        <img className="gitimg" src={require('../../assets/img/github-icon2.png').default} alt="github icon"/>
                                         </a>
                                     </div>
                                     <div>
