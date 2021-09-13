@@ -42,7 +42,7 @@ function ContactForm() {
 
         axios({
             method: "POST",
-            url: "chrisdocs.github.io/reactport/send",
+            url: "http://chrisdocs.github.io/reactport/send",
             data: formState
         }).then((response) => {
             if (response.data.status === 'success') {
