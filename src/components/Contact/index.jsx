@@ -36,45 +36,23 @@ function ContactForm() {
         console.log('errorMessage', errorMessage);
     }
 
-    // function handleSubmit(e) {
-    //     e.preventDefault();
-    //     console.log(formState);
+    function handleSubmit(e) {
+        e.preventDefault();
+        console.log(formState);
 
-    //     axios({
-    //         method: "POST",
-    //         url: "/Contact",
-    //         data: formState
-    //     }).then((response) => {
-    //         if (response.data.status === 'success') {
-    //             alert("Message Sent.");
-    //             setFormState({name: '', email: '', message: ''})
-    //         } else if (response.data.status === 'fail') {
-    //             alert("Message failed to send.")
-    //         }
-    //     })
-    // }
-
-    const [status, setStatus] = useState("Submit");
-    const handleSubmit = async (e) => {
-      e.preventDefault();
-      setStatus("Sending...");
-      const { name, email, message } = e.target.elements;
-      let details = {
-        name: name.value,
-        email: email.value,
-        message: message.value,
-      };
-      let response = await fetch("http://localhost:3000/#/Contact", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json;charset=utf-8",
-        },
-        body: JSON.stringify(details),
-      });
-      setStatus("Submit");
-      let result = await response.json();
-      alert(result.status);
-    };
+        axios({
+            method: "POST",
+            url: "http://localhost:3002/send",
+            data: formState
+        }).then((response) => {
+            if (response.data.status === 'success') {
+                alert("Message Sent.");
+                setFormState({name: '', email: '', message: ''})
+            } else if (response.data.status === 'fail') {
+                alert("Message failed to send.")
+            }
+        })
+    }
     
 
     // console.log(formState)
@@ -112,6 +90,18 @@ function ContactForm() {
 
         </section>
     );
+}
+
+function onNameChange(event) {
+    this.setState({name: event.target.value})
+}
+
+function onEmailChange(event) {
+    this.setState({email: event.target.value})
+}
+
+function onMessageChange(event) {
+    this.setState({message: event.target.value})
 }
 
 export default ContactForm;
