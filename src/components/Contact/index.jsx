@@ -1,97 +1,87 @@
 import React, { useState } from "react";
-import { validateEmail } from '../../utils/helpers';
-import '../../assets/css/contact.css';
-const axios = require('axios').default;
+import "./styles.css";
+import { useForm } from 'react-hook-form';
+import { init, sendForm } from 'emailjs-com'
+init('user_h5i4jKcOz7z58xA2biMrJ')
 
-function ContactForm() {
 
-    const [formState, setFormState] = useState({ name: '', email: '', message: ''});
-    const {name, email, message} = formState;
-    const [errorMessage, setErrorMessage] = useState('');
-
-    function handleChange(e) {
-
-        if (e.target.name === 'email') {
-            const isValid = validateEmail(e.target.value);
-            console.log("🚀 ~ file: index.jsx ~ line 14 ~ handleChange ~ isValid", isValid);
-            
-            if (!isValid) {
-                setErrorMessage('Your email is invalid');
-            } else {
-                setErrorMessage('');
-            }
-            
-        } else {
-            if (!e.target.value.length) {
-                setErrorMessage(`${e.target.name} is required.`);
-            } else {
-                setErrorMessage('');
-            }
-        }
+function EmailForm() {
+    
+    const { handleSubmit, register, watch, formState: {errors} } = useForm();
+    const onSubmit = values => {
+        console.log(values);
+        generateContactNum();
         
-        if (!errorMessage) {
-            setFormState({ ...formState, [e.target.name]: e.target.value });
-        }
-
-        console.log('errorMessage', errorMessage);
-    }
-
-    function handleSubmit(e) {
-        e.preventDefault();
-        console.log(formState);
-
-        axios({
-            method: "POST",
-            url: "https://chrisdocs.github.io/reactport/send",
-            data: formState
-        }).then((response) => {
-            if (response.data.status === 'success') {
-                alert("Message Sent.");
-                setFormState({name: '', email: '', message: ''})
-            } else if (response.data.status === 'fail') {
-                alert("Message failed to send")
-            }
-        })
+        sendForm('default_service', 'template_bk8oh9j', '#contact-form')
+        .then(function(response) {
+            console.log('Success!', response.status, response.text);
+        }, function(error) {
+            console.log('Failed...', error);
+        });
     }
     
+        const [contactNumber, setContactNumber] = useState("000000");
+    
+        const generateContactNum = () => {
+            const numStr = "000000" + (Math.random() * 1000000 | 0);
+            setContactNumber(numStr.substring(numStr.length - 6));
+        }
 
-    // console.log(formState)
+    const message = watch('message') || "";
+    const messageCharactersWatch = 250 - message.length;
 
-    return (
-        <section>
-            <h1 className="contact-title">Contact me</h1>
 
-            <form id="contact-form" method='POST' action="send" encType="multipart/form-data" onSubmit={handleSubmit}>
+    return(
+        <div className="contact">
+            <h1>Contact</h1>
+            <form id='contact-form' onSubmit={handleSubmit(onSubmit)}>
 
-                <div className="form-group">
-                    <label className="label-title" htmlFor="name">Name:</label>
-                    <input type="text" className="form-control" type="text" name="name" placeholder="Zaphod Beeblebrox" defaultValue={name} onBlur={handleChange} />
-                </div>
+            <input type='hidden' name='contact_number' value={contactNumber} />
+                
+                {errors.username && errors.username.type === "required" && (
+                    <div role="alert">Name is required<br/></div>
+                )}
+                <input 
+                    placeholder="Name"
+                    aria-invalid={errors.username ? "true" : "false"}
+                    {...register('username', {
+                        required: true
+                        })}
+                    />
+                <br/>
 
-                <div className="form-group">
-                    <label className="label-title" htmlFor="email">Email address</label>
-                    <input type="email" name="email" className="form-control" placeholder="name@example.com" defaultValue={email} onBlur={handleChange} />
-                </div>
+                {errors.email && errors.email.type === "required" && (
+                    <div role="alert">Email is required<br/></div>
+                )}
+                <input 
+                type='email'
+                placeholder='Email'
+                {...register('email', {
+                    required: true,
+                    pattern: {
+                        value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                        message: "Invalid email address."
+                        } 
+                    })}  />
+                <br/>
 
-                <div className="form-group">
-                    <label className="label-title" htmlFor="message">Message:</label>
-                    <textarea className="input-box form-control" name="message" row="5" defaultValue={message} onBlur={handleChange} />
-                </div>
-
-                {errorMessage && (
-                    <div>
-                        <p className="error-text">{errorMessage}</p>
-                    </div>
-                    )}
-
-                <button type="submit" value="submit">Submit</button>
-
+                {errors.message && errors.message.type === "required" && (
+                    <div role="alert">A message is required<br/></div>
+                )}
+                <textarea 
+                name='message'
+                placeholder='Message'
+                maxLength='250'
+                {...register('message', {
+                    required: true 
+                })} 
+                />
+                <p className="message-chars">{messageCharactersWatch} characters left</p>
+                <br/>
+                <button type='submit'>Submit</button>
             </form>
-
-        </section>
+        </div>
     );
-}
+};
 
-
-
-export default ContactForm;
+export default EmailForm;

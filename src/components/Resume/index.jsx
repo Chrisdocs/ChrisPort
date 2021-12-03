@@ -7,9 +7,6 @@ function Resume(props) {
         <section>
             <h1 className="resume-title">Resume!</h1>
             <img className="resume-img" src={require('../../assets/img/resume.png').default} alt="Resume"/>
-            <a className="download" href={require("../../assets/img/resume.png").default} download>
-                <p>Dowload a copy!</p>
-            </a>
             <div>
                 <h2 className='prof-glance'>Proficiencies at a glance.</h2>
                 <ul className='list-prof'>
