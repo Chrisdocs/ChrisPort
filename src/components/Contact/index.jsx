@@ -15,6 +15,8 @@ function EmailForm() {
         sendForm('default_service', 'template_bk8oh9j', '#contact-form')
         .then(function(response) {
             console.log('Success!', response.status, response.text);
+            alert("Message Sent!")
+            document.getElementById("contact-form").reset();
         }, function(error) {
             console.log('Failed...', error);
         });
