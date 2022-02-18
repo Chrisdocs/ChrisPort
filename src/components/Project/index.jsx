@@ -15,7 +15,7 @@ function Project(props) {
         {
             id: 1,
             projectName: "BikeSleuth",
-            projectLink: "https://chrisdocs.github.io/run-buddy/",
+            projectLink: "https://bikesleuth.herokuapp.com/#/",
             projectGit: "https://github.com/Chrisdocs/FindMyBike",
             projectImg: bikeSleuth,
             imageAlt: "Snippet of the Bike Sleuth app.",
